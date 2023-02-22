@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_26"
+            android:text="@string/brand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvBrandValue"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_26"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/unknown"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBrand" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_26"
+            android:layout_marginTop="10dp"
+            android:text="@string/type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBrandValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTypeValue"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_26"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/unknown"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvType" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLength"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/length"
+            app:layout_constraintStart_toStartOf="@id/tvCardNumber"
+            app:layout_constraintTop_toBottomOf="@id/tvCardNumber" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLengthValue"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/unknown"
+            app:layout_constraintBottom_toBottomOf="@id/tvLength"
+            app:layout_constraintStart_toEndOf="@id/tvLength"
+            app:layout_constraintTop_toTopOf="@id/tvLength" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLuhn"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/luhn"
+            app:layout_constraintStart_toStartOf="@id/tvLength"
+            app:layout_constraintTop_toBottomOf="@id/tvLength" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvCardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/card_number"
+            app:layout_constraintStart_toStartOf="@id/tvTypeValue"
+            app:layout_constraintTop_toBottomOf="@id/tvTypeValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/country"
+            app:layout_constraintStart_toStartOf="@id/tvLuhn"
+            app:layout_constraintTop_toBottomOf="@id/tvLuhn" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvCountryValue"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unknown"
+            app:layout_constraintStart_toStartOf="@id/tvCountry"
+            app:layout_constraintTop_toBottomOf="@id/tvCountry" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvCoordinates"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unknown"
+            app:layout_constraintStart_toStartOf="@id/tvCountryValue"
+            app:layout_constraintTop_toBottomOf="@id/tvCountryValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/bank"
+            app:layout_constraintStart_toStartOf="@id/tvCoordinates"
+            app:layout_constraintTop_toBottomOf="@id/tvCoordinates" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvBankName"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unknown"
+            app:layout_constraintStart_toStartOf="@id/tvBank"
+            app:layout_constraintTop_toBottomOf="@id/tvBank" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvUrlBank"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unknown"
+            app:layout_constraintStart_toStartOf="@id/tvBankName"
+            app:layout_constraintTop_toBottomOf="@id/tvBankName" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvBankNumberPhone"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unknown"
+            app:layout_constraintStart_toStartOf="@id/tvUrlBank"
+            app:layout_constraintTop_toBottomOf="@id/tvUrlBank" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLuhnValue"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/unknown"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLuhn"
+            app:layout_constraintStart_toEndOf="@id/tvLuhn"
+            app:layout_constraintTop_toTopOf="@id/tvLuhn" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvPrepaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="@string/prepaid"
+            app:layout_constraintStart_toEndOf="@id/tvBrandValue"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvPrepaidValue"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/unknown"
+            app:layout_constraintStart_toStartOf="@id/tvPrepaid"
+            app:layout_constraintTop_toBottomOf="@id/tvPrepaid" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvScheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/scheme_network"
+            app:layout_constraintStart_toStartOf="@id/tvPrepaid"
+            app:layout_constraintTop_toBottomOf="@id/tvPrepaidValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvSchemeValue"
+            style="@style/Text.MainColor.14.oneLines"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/unknown"
+            app:layout_constraintStart_toStartOf="@id/tvScheme"
+            app:layout_constraintTop_toBottomOf="@id/tvScheme" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BINLIST</string>
+    <string name="bin_iin">BIN/IIN</string>
+    <string name="country">Country:</string>
+    <string name="bank">Bank:</string>
+    <string name="scheme_network">SCHEME / NETWORK</string>
+    <string name="type">TYPE</string>
+    <string name="brand">BRAND</string>
+    <string name="prepaid">PREPAID</string>
+    <string name="card_number">CARD NUMBER</string>
+    <string name="length">length:</string>
+    <string name="luhn">luhn:</string>
+    <string name="latitude_longitude">(latitude: %1$d, longitude: %2$d)</string>
+    <string name="country_city">%1$s, %2$s</string>
+    <string name="unknown">unknown</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="error">Error</string>
+</resources>

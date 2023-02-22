@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text"/>
+
+    <style name="Text.MainColor">
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="Text.MainColor.14">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Text.14">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Text.MainColor.14.oneLines">
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>
